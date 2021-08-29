@@ -54,5 +54,11 @@
         <property name = "amount" value = "0"/>
     </bean>
 
+    <bean id="travel" class="com.example.demon.Travel">
+        <property name = "startingPoint" value = "null"/>
+        <property name = "destination" value = "null"/>
+        <property name = "date" value = "0"/>
+    </bean>
+
 
 </beans>

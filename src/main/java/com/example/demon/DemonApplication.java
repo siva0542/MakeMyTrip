@@ -77,6 +77,13 @@ public class DemonApplication {
 		else
 			System.out.println("PaymentFailed");
 
+		Travel travel=(Travel) cont.getBean("travel");
+		travel.setStartingPoint("Benguluru");
+		travel.setDestination("Chennai");
+		travel.setDate(31);
+
+		System.out.println(travel.getAvailability());
+
 
 	}
 
