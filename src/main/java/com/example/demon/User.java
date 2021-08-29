@@ -1,6 +1,6 @@
 package com.example.demon;
 
-public class User {
+public abstract class User {
     String username;
     String email;
     String creditCard;
