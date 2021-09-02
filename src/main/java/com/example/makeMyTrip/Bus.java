@@ -1,7 +1,9 @@
 package com.example.makeMyTrip;
 
-import java.util.Map;
+import org.springframework.stereotype.Component;
 
+import java.util.Map;
+@Component
 public class Bus implements Vehicle{
     private int busSpeed=60;
     private int time;
