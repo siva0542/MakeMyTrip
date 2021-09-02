@@ -1,4 +1,4 @@
-package com.example.demon;
+package com.example.makeMyTrip;
 
 public class Travel {
     private String startingPoint;

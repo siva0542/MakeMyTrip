@@ -1,22 +1,16 @@
-package com.example.demon;
+package com.example.makeMyTrip;
+
+import java.util.Set;
 
 public class Train implements  Vehicle{
     private int trainSpeed=70;
     private int time=0;
 
-    public int getDistance() {
-        return distance;
-    }
-
-    public void setTime(int time) {
-        this.time = time;
-    }
-
     public void setDistance(int distance) {
         this.distance = distance;
     }
 
-    private int distance;
+    private int distance=600;
     public int getTime(){
         time=distance/trainSpeed;
         return time;

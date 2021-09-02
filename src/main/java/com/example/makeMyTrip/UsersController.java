@@ -1,4 +1,4 @@
-package com.example.demon;
+package com.example.makeMyTrip;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +11,7 @@ public class UsersController {
         return "register_page";
     }
 
-    @GetMapping("/login")
+    @GetMapping("/login/")
     public String getLoginPage(){
         return "login_page";
     }

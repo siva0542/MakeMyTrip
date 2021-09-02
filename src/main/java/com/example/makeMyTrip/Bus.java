@@ -1,20 +1,14 @@
-package com.example.demon;
+package com.example.makeMyTrip;
+
+import java.util.Map;
 
 public class Bus implements Vehicle{
     private int busSpeed=60;
     private int time;
-    private int distance;
-
-    public int getDistance() {
-        return distance;
-    }
+    private int distance=1000;
 
     public void setDistance(int distance) {
         this.distance = distance;
-    }
-
-    public void setTime(int time) {
-        this.time = time;
     }
 
     public int getTime(){
