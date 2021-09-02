@@ -20,7 +20,7 @@ public class MakeMyTripApplication {
 		ApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
 		switch (choice){
 			case 1: Register register=(Register) context.getBean("register");
-			        register.setRegister();
+			        //register.setRegister();
 			        User user=(User) context.getBean("user");
 			        user.selectSourceAndDestination();
 				int ch=sc.nextInt();

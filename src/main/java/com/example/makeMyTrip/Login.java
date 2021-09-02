@@ -4,12 +4,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Login{
-    private String usern;
-    private String pass;
-    private User user;
-    public boolean loginn(){
-        this.usern=usern;
-        this.pass=pass;
-        return false;
+    private String s;
+    private String p;
+    private Login login;
+    public Login(String s,String p){
+        this.s = s;
+        this.p = p;
     }
 }

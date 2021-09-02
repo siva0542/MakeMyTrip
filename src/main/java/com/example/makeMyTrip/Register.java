@@ -6,10 +6,12 @@ import org.springframework.stereotype.Component;
 @Component
 @Primary
 public class Register {
-    private String[] userNames=new String[100];
-    private String[]  passwords=new String[100];
-    public void setRegister(){
-        this.userNames=userNames;
-        this.passwords=passwords;
+    private String userName;
+    private String password;
+    private Register register;
+
+    public Register(String userName, String password) {
+        this.userName=userName;
+        this.password=password;
     }
 }

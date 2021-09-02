@@ -2,6 +2,7 @@ package com.example.makeMyTrip;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import java.util.Scanner;
 
@@ -9,23 +10,25 @@ import java.util.Scanner;
 @ComponentScan("com.example.makeMyTrip")
 public class Config {
     @Bean
-    public void setRegister(){
+   @Scope(value="prototype")
+    public Register setRegister(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter your name");
-        String userNames=sc.nextLine();
+        String userName=sc.nextLine();
         System.out.println("Enter your password");
-        String passwords=sc.nextLine();
+        String password=sc.nextLine();
         System.out.println("Registration Successful");
+        return new Register(userName,password);
     }
     @Bean
-    public void loginn(){
+   @Scope(value="prototype")
+    public Login setLogin(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter username");
         String s=sc.nextLine();
         System.out.println("Enter Password");
         String p=sc.nextLine();
         System.out.println("Login successful");
-        //Register register=new Register();
-       // System.out.println(register.useNames);
+        return new Login(s,p);
     }
 }
